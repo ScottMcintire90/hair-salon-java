@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClientTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-05-06T20:14:47" hostname="Thes-iMac.local" time="0.148">
+  <properties/>
+  <testcase name="getName_instantiatesWithName_name" classname="ClientTest" time="0.087"/>
+  <testcase name="getId_clientsInstantiateWithAnId_1" classname="ClientTest" time="0.024"/>
+  <testcase name="all_emptyAtFirst" classname="ClientTest" time="0.025"/>
+  <testcase name="Client_instantiatesCorrectly_true" classname="ClientTest" time="0.005"/>
+  <testcase name="equals_returnsTrueIfNamesAreTheSame_true" classname="ClientTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
