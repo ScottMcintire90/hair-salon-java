@@ -26,5 +26,36 @@ public class StylistTest {
     Stylist testStylist = new Stylist("David Bowie");
     assertEquals(true, testStylist instanceof Stylist);
   }
-  
+
+  @Test
+  public void getName_stylistInstantiatesWithName_name() {
+    Stylist testStylist = new Stylist("David Bowie");
+    assertEquals("David Bowie", testStylist.getName());
+  }
+
+  @Test
+  public void all_emptyAtFirst() {
+    assertEquals(Stylist.all().size(), 0);
+  }
+
+  @Test
+  public void equals_returnsTrueIfNamesAretheSame() {
+    Stylist firstStylist = new Stylist("David Bowie");
+    Stylist secondStylist = new Stylist("David Bowie");
+    assertTrue(firstStylist.equals(secondStylist));
+  }
+
+  @Test
+  public void save_returnsTrueIfSaved_true() {
+    Stylist testStylist = new Stylist("David Bowie");
+    testStylist.save();
+    assertEquals(Stylist.all().get(0).getName(), testStylist.getName());
+  }
+  @Test
+  public void save_assignsIdToObject() {
+    Stylist testStylist = new Stylist("David Bowie");
+    testStylist.save();
+    Stylist savedStylist = Stylist.all().get(0);
+    assertEquals(testStylist.getId(), savedStylist.getId());
+  }
 }
