@@ -1,58 +1,7 @@
-body {
-  background-image: url(/img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .header {
-  font-family: Open Sans, sans-serif;
-  font-size: 55px;
-  letter-spacing: 5px;
-  font-weight: 300;
-    text-align: center;
-}
-
-
-.restaurantNew {
-  padding-top: 400px;
-  padding-left: 800px;
-  width:100%;
-  font-size: 25px;
   text-align: center;
 }
 
-hr.style {
-  border: 0;
-  height: 1px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.list {
-  font-family: Open Sans, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-    text-align: center;
-}
-
-#newReview {
-  height: 50px;
-  font-size: 25px;
-}
-
-ul li {
-  list-style-type: none;
-}
-.restaurant {
-  text-align: center;
-}
-
-.padding {
-  padding:50px;
-  text-align:center;
-}
-
-.restaurantForm {
-  margin-top: 50px;
-  margin-left: 150px;
+.bod {
+  margin: 50px;
 }

@@ -1,0 +1,23 @@
+<div class="stylist">
+  <h1 class="header">$stylist.getName()</h1>
+</div>
+
+<h3>Add a client</h3>
+
+<form action = "/stylists/$stylist.getId()" method="post">
+  <label for="client">Client Name</label>
+  <input id="client" name="client" type="text">
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+</br>
+<h3>Clients:</h3>
+  <ul>
+    #foreach($client in $stylist.getClients())
+      <li>$client.getName()</li>
+      <hr>
+    #end
+  </ul>
+
+<a href="/">Go to the Homepage</a>

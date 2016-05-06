@@ -1,35 +1,15 @@
 <div class="container">
-  <h1 class="header"><center>Restaurants</center></h1>
+  <h1 class="header">PDX Cuts</h1>
   <div class="list">
     <ul>
-        <div class="col-md-4">
-          <h3>Restaurant</h3>
-          #foreach($restaurant in $restaurants)
-          <li><span><a href="/restaurants/$restaurant.getId()">$restaurant.getName()</span></a></li>
+          <h3>Stylists</h3>
+          #foreach($stylist in $stylists)
+          <li><span><a href="/stylists/$stylist.getId()">$stylist.getName()</span></a></li>
+          <hr class="style">
           #end
-        </div>
-        <div class="col-md-4 center">
-          <h3>Cuisine Type</h3>
-          #foreach($restaurant in $restaurants)
-          <li>$restaurant.getCuisine()</li>
-          #end
-        </div>
-        <div class="col-md-4">
-          <h3>City</h3>
-          #foreach($restaurant in $restaurants)
-          <li>$restaurant.getCity()</li>
-          #end
-        </div>
-        <hr class="style">
     </ul>
   </div>
-  <div class="restaurantNew">
-    <a href="/restaurants/new">Add a Restaurant</a>
-    </br>
-    </br>
-    <a href="/cuisines">Sort by Cuisine</a>
-    </br>
-    </br>
-    <a href="/cities">Sort by City</a>
+  <div>
+    <a href="/stylists/new">Add a Stylist</a>
   </div>
 </div>
