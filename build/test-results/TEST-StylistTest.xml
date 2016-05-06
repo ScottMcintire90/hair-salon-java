@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StylistTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-06T03:15:31" hostname="Thes-iMac.local" time="0.086">
+  <properties/>
+  <testcase name="Stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.086"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
