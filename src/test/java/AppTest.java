@@ -77,4 +77,14 @@ public class AppTest extends FluentTest {
     assertTrue(Client.all().size() == 0);
   }
 
+  @Test
+  public void stylistDelete() {
+    Stylist myStylist = new Stylist("David Bowie");
+    myStylist.save();
+    String stylistPath = String.format("http://localhost:4567/stylists/%d", myStylist.getId());
+    goTo(stylistPath);
+    submit("#delete-stylist");
+    assertTrue(Stylist.all().size() == 0);
+  }
+
 }
