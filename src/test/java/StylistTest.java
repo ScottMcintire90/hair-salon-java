@@ -68,4 +68,21 @@ public class StylistTest {
     assertEquals(testStylist.getClients().size(), 2);
   }
 
+  @Test
+  public void update_updatesStylistName_true() {
+    Stylist myStylist = new Stylist("David Bowie");
+    myStylist.save();
+    myStylist.update("Michael Jackson");
+    assertEquals("Michael Jackson", Stylist.find(myStylist.getId()).getName());
+  }
+
+  @Test
+  public void delete_deletesStylist_true() {
+    Stylist myStylist = new Stylist("David Bowie");
+    myStylist.save();
+    int myStylistId = myStylist.getId();
+    myStylist.delete();
+    assertEquals(null, Stylist.find(myStylistId));
+  }
+
 }
