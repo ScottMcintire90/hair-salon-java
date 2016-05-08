@@ -1,12 +1,10 @@
 <h1>Edit $client.getName()</h1>
-  <h3>Preferences: $client.getPreference()</h3>
-  <a class="btn btn-warning" href="/stylist/$client.getStylistId()">Go Back</a>
-  <a href="/" class="btn btn-info">Go Home</a>
-  <form action="/delete/client/$client.getId()" method="post">
-    <button class="btn btn-danger" id="deleteClient" type="submit">Delete</button>
-  </form>
 
-  <form action="/edited/client/$client.getId()" method="post">
+  <a class="btn btn-warning" href="/stylist/$client.getStylistId()">Go Back</a>
+
+  <a href="/" class="btn btn-info">Go Home</a>
+
+  <form action="/stylists/$stylist.getId()/$client.getId()" method="post">
     <label for="client-new-name">Name:</label>
     <input class="form-control" type="text" name="client-new-name" id="client-new-name">
 

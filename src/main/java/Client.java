@@ -82,4 +82,11 @@ public class Client {
     }
   }
 
+
+  // <form action="/delete/client/$client.getId()" method="post">
+  //   <button class="btn btn-danger" id="deleteClient" type="submit">Delete</button>
+  // </form>
+
+
+
 }
