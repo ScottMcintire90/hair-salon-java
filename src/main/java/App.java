@@ -5,6 +5,7 @@ import static spark.Spark.*;
 import java.util.ArrayList;
 import java.util.Map;
 
+
 public class App {
   public static void main(String[] args) {
     staticFileLocation("/public");
@@ -46,9 +47,7 @@ public class App {
 
       String client = request.queryParams("client");
       Client newClient = new Client(client, stylist.getId());
-
       newClient.save();
-
       model.put("stylist", stylist);
       model.put("client", newClient);
       model.put("template", "templates/stylist.vtl");

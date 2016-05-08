@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StylistTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-05-07T00:23:44" hostname="Thes-iMac.local" time="0.085">
+<testsuite name="StylistTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-05-08T14:49:04" hostname="Thes-iMac.local" time="0.095">
   <properties/>
   <testcase name="getName_stylistInstantiatesWithName_name" classname="StylistTest" time="0.004"/>
   <testcase name="equals_returnsTrueIfNamesAretheSame" classname="StylistTest" time="0.004"/>
-  <testcase name="Stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.005"/>
-  <testcase name="all_emptyAtFirst" classname="StylistTest" time="0.008"/>
+  <testcase name="Stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.004"/>
+  <testcase name="all_emptyAtFirst" classname="StylistTest" time="0.022"/>
   <testcase name="save_returnsTrueIfSaved_true" classname="StylistTest" time="0.013"/>
   <testcase name="find_findStylistInDatabase_true" classname="StylistTest" time="0.013"/>
   <testcase name="getClients_retrievesAllClientsFromDatabase_clientsList" classname="StylistTest" time="0.022"/>
-  <testcase name="save_assignsIdToObject" classname="StylistTest" time="0.013"/>
+  <testcase name="save_assignsIdToObject" classname="StylistTest" time="0.012"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

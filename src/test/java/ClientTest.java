@@ -76,4 +76,21 @@ public class ClientTest {
   public void find_returnsNullWhenNoClientFound_null() {
     assertTrue(Client.find(999) == null);
   }
+
+  @Test
+  public void update_updatesClientName_true() {
+    Client myClient = new Client("John Smith", 1);
+    myClient.save();
+    myClient.update("Meyers Leonard");
+    assertEquals("Meyers Leonard", Client.find(myClient.getId()).getName());
+  }
+
+  @Test
+  public void delete_deletesClient_true() {
+    Client myClient = new Client("John Smith", 1);
+    myClient.save();
+    int myClientId = myClient.getId();
+    myClient.delete();
+    assertEquals(null, Client.find(myClientId));
+  }
 }
