@@ -49,18 +49,32 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Jane Doe");
   }
 
-  // @Test
-  // public void clientUpdate() {
-  //   Stylist testStylist = new Stylist("David Bowie");
-  //   testStylist.save();
-  //   Client myClient = new Client("John Smith", testStylist.getId());
-  //   myClient.save();
-  //   String clientPath = String.format("http://localhost:4567/stylists/%d", testStylist.getId());
-  //   goTo(clientPath);
-  //   click("a", withText("John Smith"));
-  //   fill("#client-new").with("Meyers Leonard");
-  //   submit("#update-client");
-  //   assertThat(pageSource()).contains("Meyers Leonard");
-  // }
+  @Test
+  public void clientUpdate() {
+    Stylist testStylist = new Stylist("David Bowie");
+    testStylist.save();
+    Client myClient = new Client("John Smith", testStylist.getId());
+    myClient.save();
+    String clientPath = String.format("http://localhost:4567/stylists/%d/clients/%d", testStylist.getId(), myClient.getId());
+    goTo(clientPath);
+    fill("#name").with("Meyers Leonard");
+    submit("#update-client");
+    String newPath = String.format("http://localhost:4567/stylists/%d", testStylist.getId());
+    goTo(newPath);
+    assertThat(pageSource()).contains("Meyers Leonard");
+  }
+
+  @Test
+  public void clientDelete() {
+    Stylist testStylist = new Stylist("David Bowie");
+    testStylist.save();
+    Client myClient = new Client("John Smith", testStylist.getId());
+    myClient.save();
+    String clientPath = String.format("http://localhost:4567/stylists/%d/clients/%d", testStylist.getId(), myClient.getId());
+    goTo(clientPath);
+    fill("#name").with("Meyers Leonard");
+    submit("#delete-client");;
+    assertTrue(Client.all().size() == 0);
+  }
 
 }
