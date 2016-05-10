@@ -1,7 +1,58 @@
 .header {
   text-align: center;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #e3e3e3;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 75px;
+	line-height: 44px;
+	letter-spacing: 15px;
+	font-weight: bold;
 }
 
 .bod {
-  margin: 50px;
+  margin: 100px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body {
+  background-image: url("/img/background.jpeg");
+}
+
+.smallHeader {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #e3e3e3;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+p {
+  color: #e3e3e3;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  font-size: 20px;
+}
+
+.links {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #e3e3e3;
+  font-size: 20px;
+}
+
+.stylists {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #e3e3e3;
+  font-size: 35px;
+}
+label {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  font-size: 25px;
+  color: #e3e3e3;
+}
+
+.client {
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  font-size: 25px;
+  color: #e3e3e3;
 }

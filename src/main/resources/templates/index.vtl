@@ -1,15 +1,14 @@
 <div class="container">
-  <h1 class="header">PDX Cuts</h1>
+  <h1 class="header">PDX CUTS</h1>
   <div class="list">
     <ul>
-      <h3>Stylists</h3>
+      <h2 class="smallHeader">Stylists</h2>
       #foreach($stylist in $stylists)
-      <li><span><a href="/stylists/$stylist.getId()">$stylist.getName()</span></a></li>
-      <hr class="style">
+      <li><span><a class = "stylists" href="/stylists/$stylist.getId()">$stylist.getName()</span></a></li>
       #end
     </ul>
   </div>
   <div>
-    <a href="/stylists/new">Add a Stylist</a>
+    <a class= "links" href="/stylists/new">Add a Stylist</a>
   </div>
 </div>
